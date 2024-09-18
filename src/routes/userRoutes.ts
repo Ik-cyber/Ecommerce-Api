@@ -1,9 +1,9 @@
 // backend/src/routes/userRoutes.ts
 import express, { Request, Response } from 'express';
 import asyncHandler from 'express-async-handler';
-import User, { IUser } from '../models/User.js';
+import User, { IUser } from '../models/User';
 import generateToken from '../utils/generateToken.js';
-import { protect } from '../middleware/authMiddleware.js';
+import { protect } from '../middleware/authMiddleware';
 
 const router = express.Router();
 
